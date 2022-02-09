@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація</title>
+</head>
+<body>
+<form action="Registration.php" method="post">
+    <b>Прізвище </b><input type="text" name="lName"> <br>
+    <b>Ім'я </b> <input type="text" name="fName"> <br>
+    <b>Email </b><input type="text" name="email"> <br>
+    <b>Телефон </b><input type="number" name="phone"> <br>
+    <b>Вулиця </b><input type="text" name="adressline"> <br>
+    <b>Місто </b><input type="text" name="city"> <br>
+    <b>Поштовий індекс </b><input type="number" name="zipcode"> <br>
+    <b>Номер будинку </b><input type="text" name="home"> <br>
+    <b>Стать </b><select size="2" name= "gender">
+    <option disabled>Выберіть стать</option>
+    <option selected value="Чоловіча">Чоловіча</option>
+    <option value="Жіноча">Жіноча</option>
+</select><br>
+    <b>Пароль </b> <input type="password" name="password"><br>
+    <input type="submit" value="Зареєструватися" name="submit">
+</form>
+</body>
+</html>
