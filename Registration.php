@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password1 = "";
 $dbname = "shoes_store";
 
 $fName = $_POST['fName'];
@@ -16,13 +16,13 @@ $zipcode = $_POST['zipcode'];
 $home = $_POST['home'];
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password1, $dbname);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-$sql = "INSERT INTO `customers`(`fName`, `lName`,`email`, `password1`, `phone`, `adress_line`, `city`, `zipcode`, `home`) 
-VALUES ($fName,$lName,$lName,$email,$password,$phone,$adressline,$city,$zipcode,$home)";
+$sql = "INSERT INTO `customers` (`fName`, `lName`, `email`, `password1`, `phone`, `adress_line`, `city`, `zipcode`, `home`)
+ VALUES ('$fName','$lName','$email','$password','$phone','$adressline','$city','$zipcode','$home')";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";

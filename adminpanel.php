@@ -23,7 +23,7 @@ if (!$conn) {
 $sql = "INSERT INTO `shoes`(`Model`,`idBrands`,`idSoles`, 
                     `idTypes`,`idSexs`,`idColors`, 
                     `idLightnigs`,`imgsrc`,`Price`) 
-VALUES ('.$Model.','.$idBrands.','.$idSoles.','.$idTypes.','.$idSexs.','.$idColors.','.$idLightnigs.','$imgsrc.','.$Price.')";
+VALUES ('$Model','$idBrands','$idSoles','$idTypes','$idSexs','$idColors','$idLightnigs','$imgsrc','$Price')";
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
 } else {

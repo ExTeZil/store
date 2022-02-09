@@ -23,7 +23,7 @@
     $dbname = "shoes_store";
 
     $mysqli = new mysqli($servername, $username, $password, $dbname);
-    $query = "SELECT * FROM shoes ";
+    $query = "SELECT * FROM shoes";
     $results = $mysqli->query($query);
 
     $query2 = "SELECT brands.Brand
